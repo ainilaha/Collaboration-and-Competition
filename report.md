@@ -7,26 +7,21 @@ The training process can been [`Tennis` notebook](https://github.com/ainilaha/co
 ## Algorithm
 
 The models are training `ddpg` function in the `Tennis` notebook.
+A pesude-code:
+![Tennis](https://github.com/ainilaha/collab-compet/blob/master/images/alg.png?raw=true?raw=true)
 
-- `first score and its window`
-- `initialize the agents`
-- `loop over the agents`
-- `training the models episodically with limited num of episodes`
-- `the training process will stop when score is reached +30`
-- `reset the agent in every episode`
-- `save the scores in every episode`
-- `The agents have its Actors but share same critic`
-- `it stops until dones in time steps`
 
 more detail can shown the algorithm from the [DDPG paper](https://arxiv.org/pdf/1509.02971.pdf):
-![soft update](https://github.com/ainilaha/Continuous-Control/blob/master/images/ddpg_alg.jpg?raw=true)
 
-The DDPG agent is implemented in `ddpg_agent.py`
+The DDPG agent is implemented in `ddpg_agent.py`, a pseudo code can see as follow:
+
 
 ### DDPG Hyper Parameters
 - `n_episodes=13500`: maximum number of training episodes,
 - `num_agents`: number of agents
 - `t` time steps, it counts until,dones
+- `noise=2` amplitude of OU noise
+- `noise_reduction`  decrease rate of above noise
 
 ### DDPG Agent Hyper Parameters
 
