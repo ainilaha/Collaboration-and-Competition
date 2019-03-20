@@ -5,11 +5,7 @@ This project is implemented based on [deep-reinforcement-learning/p3_collab-comp
 
 ## Algorithm
 
-The models are training `ddpg` function in the `Continuous_Control` notebook.
-The DDPG algorithm has two parts as shown below:
-![DDPG1](https://github.com/ainilaha/Continuous-Control/blob/master/images/ddpg1.jpg?raw=true)
-With soft update method as below:
-![soft update](https://github.com/ainilaha/Continuous-Control/blob/master/images/soft_update.jpg?raw=true)
+The models are training `ddpg` function in the `Tennis` notebook.
 
 - `first score and its window`
 - `initialize the agents`
@@ -19,6 +15,7 @@ With soft update method as below:
 - `reset the agent in every episode`
 - `save the scores in every episode`
 - `The agents have its Actors but share same critic`
+- `it stops until dones in time steps`
 
 more detail can shown the algorithm from the [DDPG paper](https://arxiv.org/pdf/1509.02971.pdf):
 ![soft update](https://github.com/ainilaha/Continuous-Control/blob/master/images/ddpg_alg.jpg?raw=true)
@@ -28,6 +25,7 @@ The DDPG agent is implemented in `ddpg_agent.py`
 ### DDPG Hyper Parameters
 - `n_episodes=13500`: maximum number of training episodes,
 - `num_agents`: number of agents
+- `t` time steps, it counts until,dones
 
 ### DDPG Agent Hyper Parameters
 
@@ -48,7 +46,7 @@ Actor and Critic network models were defined in `model.py`
 
 The Actor network and critic network set have three layers.
 The first layer is input layer with size as input size.
-The second and last layer has 512 and 256 neruals.
+The second and last layer has 256 and 128 neruals.
 
 ## Plot of rewards
 ![Tennis](https://github.com/ainilaha/collab-compet/blob/master/images/tennis.png?raw=true?raw=true)
