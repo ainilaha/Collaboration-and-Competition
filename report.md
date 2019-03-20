@@ -1,7 +1,8 @@
-# Report
+# Project 3: Collaboration and Competition Report
 ---
 This project is implemented based on [deep-reinforcement-learning/p3_collab-compet](https://github.com/udacity/deep-reinforcement-learning/tree/master/p3_collab-compet).
 
+The training process can been [`Tennis` notebook](https://github.com/ainilaha/collab-compet/blob/master/Tennis.ipynb) and usage example [`Tennis-Trained` notebook](https://github.com/ainilaha/collab-compet/blob/master/Tennis-Trained.ipynb). 
 
 ## Algorithm
 
