@@ -51,7 +51,7 @@ The first layer is input layer with size as input size.
 The second and last layer has 512 and 256 neruals.
 
 ## Plot of rewards
-![Tennis](https://github.com/ainilaha/collab-compet/master/images/tennis.png?raw=true)
+![Tennis](https://github.com/ainilaha/collab-compet/blob/master/images/tennis.png?raw=true?raw=true)
 
 ```
 
